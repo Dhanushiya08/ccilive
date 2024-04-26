@@ -1,4 +1,4 @@
-import { Breadcrumb, Row, Col, Table, Tag, Space, Modal } from "antd";
+import { Breadcrumb, Row, Col, Table, Tag, Space, Modal, Divider } from "antd";
 import React, { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import DashboardCall from "./DashboardCall";
@@ -8,7 +8,6 @@ import Callchart from "./Callchart";
 import Total from "./total";
 function Dashboardchartsmain() {
   const [callopen, setCallopen] = useState(false);
-
   const columns = [
     {
       title: "Date&Time",
@@ -93,10 +92,10 @@ function Dashboardchartsmain() {
   return (
     <>
       {" "}
-      <div className="px-4">
+      <div className="header-title-bread">
         {" "}
         <Breadcrumb
-          separator=">"
+          separator={<Icon icon="ic:twotone-keyboard-arrow-right" />}
           items={[
             {
               title: "Home",
@@ -109,46 +108,72 @@ function Dashboardchartsmain() {
         />
       </div>
       <Row className="px-4">
-        <Col span={7} className="p-2">
+        <Col xxl={6} xl={6} lg={6} md={24} sm={24} xs={24} className="p-2">
           <div className="dashboard-card ">
             <div className="dashboard-card-title">Agent Profile</div>
-            <div className="px-4 pb-3">
-              <Row className="dashboard-card-list">
+            <div className="px-4">
+              <Divider className="agent-divede" />
+            </div>
+            <div className="px-4 py-2 card-agent-list">
+              <div className="d-flex justify-content-sm-start p-1">
+                <div className="dashboard-card-sub">Name</div>{" "}
+                <div className="dashboard-card-subtitle agent-text-one">
+                  : Larrey McCoy
+                </div>
+              </div>
+              <div className="d-flex justify-content-sm-start p-1">
+                <div className="dashboard-card-sub">Role</div>{" "}
+                <div className="dashboard-card-subtitle agent-text-two">
+                  {" "}
+                  : Administrator
+                </div>
+              </div>
+              <div className="d-flex  justify-content-sm-start p-1">
+                <div className="dashboard-card-sub"> Number</div>{" "}
+                <div className="dashboard-card-subtitle agent-text-three">
+                  :+919876543212
+                </div>
+              </div>
+              <div className="d-flex justify-content-sm-start p-1 ">
+                <div className="dashboard-card-sub"> Location</div>{" "}
+                <div className="dashboard-card-subtitle ps-4">:Remote</div>
+              </div>
+              {/* <Row className="dashboard-card-list">
                 <Col span={8} className="dashboard-card-sub">
-                  Name:
+                  Name
                 </Col>
                 <Col span={16} className="dashboard-card-subtitle">
-                  Larrey McCoy
+                  : Larrey McCoy
+                </Col>
+              </Row> 
+              <Row className="dashboard-card-list">
+                <Col span={8} className="dashboard-card-sub">
+                  Role
+                </Col>
+                <Col span={16} className="dashboard-card-subtitle">
+                  : Administrator
                 </Col>
               </Row>
               <Row className="dashboard-card-list">
                 <Col span={8} className="dashboard-card-sub">
-                  Role:
+                  Number
                 </Col>
                 <Col span={16} className="dashboard-card-subtitle">
-                  Administrator
+                  :+91 9876543212
                 </Col>
               </Row>
               <Row className="dashboard-card-list">
                 <Col span={8} className="dashboard-card-sub">
-                  Number:
+                  Location
                 </Col>
                 <Col span={16} className="dashboard-card-subtitle">
-                  +91 9876543212
+                  :Remote
                 </Col>
-              </Row>
-              <Row className="dashboard-card-list">
-                <Col span={8} className="dashboard-card-sub">
-                  Location:
-                </Col>
-                <Col span={16} className="dashboard-card-subtitle">
-                  Remote
-                </Col>
-              </Row>
+              </Row> */}
             </div>
           </div>
         </Col>
-        <Col span={17} className="p-2">
+        <Col xxl={18} xl={18} lg={18} md={24} sm={24} xs={24} className="p-2">
           <div className="dashboard-card">
             <div className="dashboard-card-tabltitle">Last 3 Call History</div>
             <div className="px-2">
@@ -163,11 +188,11 @@ function Dashboardchartsmain() {
         </Col>
       </Row>
       <Row className="px-4">
-        <Col span={12} className="p-2">
+        <Col xxl={12} xl={12} lg={12} md={24} sm={24} xs={24} className="p-2">
           {" "}
           <div className="dashboard-sec-card">
-            <div className="d-flex  justify-content-between">
-              <div className="dashboard-card-tabltitle">Sentiment</div>
+            <div className="d-flex  justify-content-between ps-3">
+              <div className="dashboard-card-tabltitle ">Sentiment</div>
               <div className="dashboard-card-tab-title">
                 <span className="tot-text">Total Calls | 52</span>{" "}
                 <span className="tot-active-text">D</span>
@@ -177,7 +202,15 @@ function Dashboardchartsmain() {
             </div>
             <div>
               <Row>
-                <Col span={10} className="px-2 spacing">
+                <Col
+                  xxl={10}
+                  xl={10}
+                  lg={10}
+                  md={24}
+                  sm={24}
+                  xs={24}
+                  className="px-4 spacing"
+                >
                   <div className="d-flex justify-content-around call-card-mid">
                     <div className="d-flex justify-content-center">
                       <div className="px-2 ">
@@ -215,14 +248,17 @@ function Dashboardchartsmain() {
                     <div className="call-text-no">45</div>
                   </div>
                 </Col>
-                <Col span={14}>
-                  <Sentimentchart />
+                <Col xxl={14} xl={14} lg={14} md={24} sm={24} xs={24}>
+                  <div className="d-flex justify-content-center">
+                    {" "}
+                    <Sentimentchart />
+                  </div>
                 </Col>
               </Row>
             </div>
           </div>
         </Col>
-        <Col span={12} className="p-2">
+        <Col xxl={12} xl={12} lg={12} md={24} sm={24} xs={24} className="p-2">
           <div className="dashboard-sec-card">
             <div className="d-flex  justify-content-between">
               <div className="dashboard-card-tabltitle">
@@ -241,13 +277,73 @@ function Dashboardchartsmain() {
         </Col>
       </Row>
       <Row className="px-4">
-        <Col span={12} className="p-2">
+        <Col xxl={12} xl={12} lg={12} md={24} sm={24} xs={24} className="p-2">
           {" "}
           <div className="dashboard-sec-card">
-            <div className="dashboard-card-tabltitle">
+            <Row>
+              <Col
+                xxl={13}
+                xl={13}
+                lg={13}
+                md={24}
+                sm={24}
+                xs={24}
+                className="p-1"
+              >
+                <div className="dashboard-card-tabltitle">
+                  Today's New and Existing Calls
+                </div>
+
+                <div className="px-4">
+                  <div className="d-flex justify-content-around call-card-mid">
+                    <div className="d-flex justify-content-center">
+                      <div className="px-2 ">
+                        <Icon
+                          icon="icon-park-outline:dot"
+                          className="neutral-text"
+                        />
+                      </div>
+                      <div className="px-2 call-text">Total Calls</div>
+                    </div>
+                    <div className="call-text-no">45</div>
+                  </div>
+                  <div className="d-flex justify-content-around call-card-pos">
+                    <div className="d-flex justify-content-center">
+                      <div className="px-2 ">
+                        <Icon
+                          icon="icon-park-outline:dot"
+                          className="pos-text"
+                        />
+                      </div>
+                      <div className="px-2 call-text">New Calls</div>
+                    </div>
+                    <div className="call-text-no">45</div>
+                  </div>
+                  <div className="d-flex justify-content-around call-card-neg">
+                    <div className="d-flex justify-content-center">
+                      <div className="px-2 ">
+                        <Icon
+                          icon="icon-park-outline:dot"
+                          className="neg-text"
+                        />
+                      </div>
+                      <div className="px-2 call-text">Existing Calls</div>
+                    </div>
+                    <div className="call-text-no">45</div>
+                  </div>
+                </div>
+              </Col>
+              <Col xxl={11} xl={11} lg={11} md={24} sm={24} xs={24}>
+                {" "}
+                <div className="p-1">
+                  <Callchart />
+                </div>
+              </Col>
+            </Row>
+            {/* <div className="dashboard-sec-card"> */}
+            {/* <div className="dashboard-card-tabltitle">
               Today's New and Existing Calls
             </div>
-
             <div>
               <Row>
                 <Col span={10} className="px-2 spacing">
@@ -292,10 +388,10 @@ function Dashboardchartsmain() {
                   <Callchart />
                 </Col>
               </Row>
-            </div>
+            </div> */}
           </div>
         </Col>
-        <Col span={12} className="p-2">
+        <Col xxl={12} xl={12} lg={12} md={24} sm={24} xs={24} className="p-2">
           <div className="dashboard-sec-card">
             <div className="d-flex  justify-content-between">
               <div className="dashboard-card-tabltitle">Total Calls</div>
