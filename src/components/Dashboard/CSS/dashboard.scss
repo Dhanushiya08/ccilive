@@ -7,15 +7,15 @@
 .ant-breadcrumb-link {
   color: MainStyle.$theme-font-title;
   font-weight: 400;
-  font-size: 27px;
+  font-size: 24px;
 }
 .ant-breadcrumb a {
   color: MainStyle.$theme-font-title;
   font-weight: 700;
-  font-size: 27px;
+  font-size: 24px;
 }
 .ant-breadcrumb .ant-breadcrumb-separator {
-  font-size: 27px;
+  font-size: 26px;
   color: MainStyle.$theme-font-title;
   font-weight: 700;
 }
@@ -32,7 +32,7 @@
 .dashboard-card-title {
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   color: MainStyle.$theme-dashboard-background;
   font-size: 18px;
   font-weight: 700;
@@ -44,6 +44,21 @@
   color: MainStyle.$theme-dashboard-background;
   font-size: 18px;
   font-weight: 700;
+}
+.agent-divede.ant-divider-horizontal {
+  margin: 0px 0px !important;
+}
+.agent-text-one {
+  padding-left: 2.5rem;
+}
+.agent-text-two {
+  padding-left: 3.2rem;
+}
+.agent-text-three {
+  padding-left: 1.4rem;
+}
+.card-agent-list {
+  line-height: 2rem;
 }
 .dashboard-card-tab-title {
   display: flex;
@@ -101,7 +116,9 @@
   font-size: 20px;
   color: #fff;
 }
-
+.header-title-bread {
+  padding: 1rem 2.5rem;
+}
 .ant-btn-default.phn-icon-call {
   background-color: #05b41c;
 }
@@ -172,19 +189,19 @@
   margin-bottom: 0.5rem;
 }
 .call-card-new {
-    border-radius: 4px;
-    height: 2rem;
-    border: 0.92px solid #B7ABFF;
-    background: #F5F3FF;
-    margin-bottom: 0.5rem;
-  }
-  .call-card-exs {
-    border-radius: 4px;
-    height: 2rem;
-    border: 0.92px solid #F3722C;
-    background: #e9ffe8;
-    margin-bottom: 0.5rem;
-  }
+  border-radius: 4px;
+  height: 2rem;
+  border: 0.92px solid #b7abff;
+  background: #f5f3ff;
+  margin-bottom: 0.5rem;
+}
+.call-card-exs {
+  border-radius: 4px;
+  height: 2rem;
+  border: 0.92px solid #f3722c;
+  background: #e9ffe8;
+  margin-bottom: 0.5rem;
+}
 .call-card-neg {
   border-radius: 4px;
   height: 2rem;
@@ -337,6 +354,15 @@
   .body-mobile {
     display: none !important;
   }
+  .agent-text-one {
+    padding-left: 2.5rem;
+  }
+  .agent-text-two {
+    padding-left: 3.2rem;
+  }
+  .agent-text-three {
+    padding-left: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 1080px) and (min-width: 1025px) {
@@ -345,6 +371,15 @@
   }
   .body-mobile {
     display: none !important;
+  }
+  .agent-text-one {
+    padding-left: 2.5rem;
+  }
+  .agent-text-two {
+    padding-left: 3.2rem;
+  }
+  .agent-text-three {
+    padding-left: 1.4rem;
   }
 }
 
@@ -355,6 +390,15 @@
   .body-mobile {
     display: none !important;
   }
+  .agent-text-one {
+    padding-left: 2.5rem;
+  }
+  .agent-text-two {
+    padding-left: 3.2rem;
+  }
+  .agent-text-three {
+    padding-left: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 427px) {
@@ -363,6 +407,15 @@
   }
   .body-mobile {
     display: block !important;
+  }
+  .agent-text-one {
+    padding-left: 2.5rem;
+  }
+  .agent-text-two {
+    padding-left: 3.2rem;
+  }
+  .agent-text-three {
+    padding-left: 1.4rem;
   }
 }
 
@@ -373,6 +426,27 @@
   .body-mobile {
     display: block !important;
   }
+  .agent-text-one {
+    padding-left: 0rem;
+  }
+  .agent-text-two {
+    padding-left: 0rem;
+  }
+  .agent-text-three {
+    padding-left: 0rem;
+  }
+  .dashboard-sec-card {
+    height: 400px;
+    background-color: MainStyle.$theme-background-primary;
+    border-radius: 8px;
+  }
+  .call-icon {
+    position: fixed;
+    top: 41rem;
+    left: 22rem;
+    width: 100%;
+    z-index: 1;
+  }
 }
 
 @media only screen and (max-width: 376px) and (min-width: 321px) {
@@ -382,6 +456,27 @@
   .body-mobile {
     display: block !important;
   }
+  .agent-text-one {
+    padding-left: 0rem;
+  }
+  .agent-text-two {
+    padding-left: 0rem;
+  }
+  .agent-text-three {
+    padding-left: 0rem;
+  }
+  .dashboard-sec-card {
+    height: 400px;
+    background-color: MainStyle.$theme-background-primary;
+    border-radius: 8px;
+  }
+  .call-icon {
+    position: fixed;
+    top: 41rem;
+    left: 20rem;
+    width: 100%;
+    z-index: 1;
+  }
 }
 
 @media (max-width: 320px) {
@@ -390,5 +485,26 @@
   }
   .body-mobile {
     display: block !important;
+  }
+  .agent-text-one {
+    padding-left: 0rem;
+  }
+  .agent-text-two {
+    padding-left: 0rem;
+  }
+  .agent-text-three {
+    padding-left: 0rem;
+  }
+  .dashboard-sec-card {
+    height: 400px;
+    background-color: MainStyle.$theme-background-primary;
+    border-radius: 8px;
+  }
+  .call-icon {
+    position: fixed;
+    top: 41rem;
+    left: 17rem;
+    width: 100%;
+    z-index: 1;
   }
 }

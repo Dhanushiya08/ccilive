@@ -7,10 +7,10 @@ function DashboardDesktop() {
   return (
     <>
       <Row>
-        <Col xxl={4} xl={4} lg={6} md={5} sm={5} xs={5}>
+        <Col xxl={4} xl={4} lg={6} md={0} sm={0} xs={0}>
           <SidemenuDesktop />
         </Col>
-        <Col xxl={20} xl={20} lg={18} md={19} sm={19} xs={19}>
+        <Col xxl={20} xl={20} lg={18} md={24} sm={24} xs={24}>
           <Row>
             <Col span={24}>
               <NavbarDesktop />
