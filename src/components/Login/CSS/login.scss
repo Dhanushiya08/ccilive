@@ -1,0 +1,198 @@
+@use "../../../MainStyle";
+
+.sign-in-btn {
+  background-color: MainStyle.$theme-btn !important;
+  color: MainStyle.$theme-background-primary !important;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.ant-btn-default.sign-in-btn:hover {
+  background-color: MainStyle.$theme-btn;
+  color: MainStyle.$theme-background-primary;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.login-banner {
+  width: 100%;
+  max-height: 100%;
+}
+.login-input.ant-input {
+  color: MainStyle.$theme-font-secondary !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+.login-input.ant-input-lg {
+  border-radius: 4px;
+  height: 50px;
+}
+.login-body {
+  background-color: MainStyle.$theme-background-primary;
+}
+.ant-checkbox-wrapper.login-rem {
+  color: MainStyle.$theme-font-fourth !important;
+  font-size: 15px;
+  font-weight: 500;
+}
+a.login-form-forgot {
+  color: MainStyle.$theme-font-fourth !important;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.login-header-title {
+  font-size: 48px;
+  color: MainStyle.$theme-font-primary;
+  font-weight: 700;
+}
+.login-sub-header-title {
+  color: MainStyle.$theme-font-third;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 2560px) and (min-width: 2305px) {
+  .body-desktop {
+    display: block !important;
+  }
+  .body-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 2304px) and (min-width: 2161px) {
+  .body-desktop {
+    display: block !important;
+  }
+  .body-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 2160px) and (min-width: 1922px) {
+  .body-desktop {
+    display: block !important;
+  }
+  .body-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1921px) and (min-width: 1681px) {
+  .body-desktop {
+    display: block !important;
+  }
+  .body-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1680px) and (min-width: 1601px) {
+  .body-desktop {
+    display: block !important;
+  }
+  .body-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1471px) {
+  .body-desktop {
+    display: block !important;
+  }
+  .body-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1470px) and (min-width: 1441px) {
+  .body-desktop {
+    display: block !important;
+  }
+  .body-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1367px) {
+  .body-desktop {
+    display: block !important;
+  }
+  .body-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1281px) {
+  .body-desktop {
+    display: block !important;
+  }
+  .body-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1081px) {
+  .body-desktop {
+    display: block !important;
+  }
+  .body-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 1025px) {
+  .body-desktop {
+    display: block !important;
+  }
+  .body-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .body-desktop {
+    display: block !important;
+  }
+  .body-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 427px) {
+  .body-desktop {
+    display: none !important;
+  }
+  .body-mobile {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 426px) and (min-width: 377px) {
+  .body-desktop {
+    display: none !important;
+  }
+  .body-mobile {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 376px) and (min-width: 321px) {
+  .body-desktop {
+    display: none !important;
+  }
+  .body-mobile {
+    display: block !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .body-desktop {
+    display: none !important;
+  }
+  .body-mobile {
+    display: block !important;
+  }
+}

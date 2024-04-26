@@ -1,0 +1,24 @@
+:root {
+  --theme-background-primary: #fff;
+  --theme-background-secondary: #0d0f11;
+  --theme-btn: #3076ff;
+  --theme-font-primary: #0e1015;
+  --theme-font-secondary: #060c43;
+  --theme-font-third: #626476;
+  --theme-font-fourth: #5c5c5c;
+  --theme-font-gray: #8b8b8b;
+  --theme-font-title: #2d3748;
+  --theme-dashboard-background: #ff6b18;
+  --theme-dashboard-bg: #ededed;
+}
+$theme-background-primary: var(--theme-background-primary);
+$theme-background-secondary: var(--theme-background-secondary);
+$theme-btn: var(--theme-btn);
+$theme-font-primary: var(--theme-font-primary);
+$theme-font-secondary: var(--theme-font-secondary);
+$theme-font-third: var(--theme-font-third);
+$theme-font-fourth: var (--theme-font-fourth);
+$theme-font-gray: var(--theme-font-gray);
+$theme-font-title: var(--theme-font-title);
+$theme-dashboard-background: var(--theme-dashboard-background);
+$theme-dashboard-bg: var(--theme-dashboard-bg);

@@ -1,0 +1,46 @@
+@use "../../../MainStyle";
+.side-menu-body {
+  background-color: MainStyle.$theme-background-primary;
+  color: MainStyle.$theme-font-gray;
+  height: 100% !important;
+  border-right: 1px solid #e0e1e2;
+  padding: 1rem;
+}
+.logo-image {
+  border-radius: 5rem;
+  height: 50px;
+  width: 50px;
+}
+.dashboard-header {
+  color: MainStyle.$theme-font-title;
+  font-weight: 700;
+  font-size: 21px;
+  padding: 6px;
+}
+.side-menu-sub-body {
+  color: MainStyle.$theme-font-gray;
+  font-size: 18px !important;
+  font-weight: 400;
+  padding: 5px;
+  padding-top: 2px;
+}
+.side-menu-icon {
+  font-size: 24px;
+  color: MainStyle.$theme-font-gray;
+  padding-bottom: 3px;
+}
+.sidemenu-list {
+  line-height: 3rem;
+}
+.sidemenu-active {
+  color: MainStyle.$theme-background-primary;
+  background-color: MainStyle.$theme-dashboard-background;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.side-menu-icon-active {
+  font-size: 24px !important;
+  color: MainStyle.$theme-background-primary;
+  padding-bottom: 3px;
+}

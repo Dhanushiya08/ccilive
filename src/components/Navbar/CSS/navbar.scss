@@ -1,0 +1,35 @@
+@use "../../../MainStyle";
+.nav-menu {
+  background-color: MainStyle.$theme-background-primary;
+  color: MainStyle.$theme-font-gray;
+  height: 4rem;
+  border-bottom: 1px solid #e0e1e2;
+  padding: 1rem;
+}
+.ant-input-outlined.search-input {
+  border: none !important;
+  background-color: #f7f7f7;
+}
+.ant-input-outlined.search-input:focus-within {
+  border: none !important;
+  background-color: #f7f7f7;
+}
+.nav-logo {
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+}
+.nav-logo-icon {
+  font-size: 18px;
+  color: MainStyle.$theme-font-title;
+}
+.nav-header-title {
+  color: #24222066;
+  font-weight: 500;
+  font-size: 11px;
+}
+.nav-header-sub-title {
+  color: #242220;
+  font-weight: 500;
+  font-size: 11px;
+}
