@@ -40,6 +40,7 @@ function Knowledgechart() {
         text: "Usage", // Set y-axis title to "Usage"
         style: {
           color: "#000",
+          fontWeight: "400",
         },
       },
       labels: {

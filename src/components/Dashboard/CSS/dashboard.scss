@@ -5,19 +5,50 @@
   min-height: 100vh !important;
 }
 .ant-breadcrumb-link {
-  color: MainStyle.$theme-font-title;
-  font-weight: 400;
-  font-size: 24px;
+  color: MainStyle.$theme-font-title !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
 }
 .ant-breadcrumb a {
-  color: MainStyle.$theme-font-title;
-  font-weight: 700;
-  font-size: 24px;
+  color: MainStyle.$theme-font-title !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
 }
 .ant-breadcrumb .ant-breadcrumb-separator {
   font-size: 26px;
   color: MainStyle.$theme-font-title;
   font-weight: 700;
+}
+a {
+  text-decoration: none !important;
+}
+.ant-breadcrumb a:hover {
+  background-color: MainStyle.$theme-dashboard-bg;
+}
+  .ant-table-thead > tr > th {
+  background-color: MainStyle.$theme-background-primary !important;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+}
+.ant-table-wrapper .ant-table {
+  color: MainStyle.$theme-font-title;
+  font-weight: 400;
+  font-size: 18px;
+}
+.tag-dashboard.ant-tag.ant-tag-green {
+  color: #048800 !important;
+  border-radius: 49px;
+  border: 1px solid #048800;
+  background: #e1ffe0;
+}
+.ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before {
+  display: none !important;
 }
 .dashboard-card {
   height: 270px;
@@ -40,7 +71,7 @@
 .dashboard-card-tabltitle {
   display: flex;
   justify-content: start;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   color: MainStyle.$theme-dashboard-background;
   font-size: 18px;
   font-weight: 700;
@@ -70,6 +101,12 @@
 }
 .tot-text {
   color: #acacac;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0px 0px 2px 2px;
+}
+.tot-text-two {
+  color: MainStyle.$theme-font-primary;
   font-weight: 400;
   font-size: 15px;
   padding: 0px 0px 2px 2px;

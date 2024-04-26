@@ -42,7 +42,7 @@ function Dashboardchartsmain() {
               color = "volcano";
             }
             return (
-              <Tag color={color} key={tag}>
+              <Tag color={color} key={tag} className="tag-dashboard">
                 {tag.toUpperCase()}
               </Tag>
             );
@@ -194,7 +194,8 @@ function Dashboardchartsmain() {
             <div className="d-flex  justify-content-between ps-3">
               <div className="dashboard-card-tabltitle ">Sentiment</div>
               <div className="dashboard-card-tab-title">
-                <span className="tot-text">Total Calls | 52</span>{" "}
+                <span className="tot-text">Total Calls | </span>{" "}
+                <span className="tot-text-two">52</span>
                 <span className="tot-active-text">D</span>
                 <span className="tot-inactive-text"> M </span>
                 <span className="tot-inactive-text">Y</span>
@@ -396,13 +397,27 @@ function Dashboardchartsmain() {
             <div className="d-flex  justify-content-between">
               <div className="dashboard-card-tabltitle">Total Calls</div>
               <div className="dashboard-card-tab-title">
-                <span className="tot-text">Total Calls | 52</span>{" "}
+                <span className="tot-text">Total Calls | </span>{" "}
+                <span className="tot-text-two">52</span>
                 <span className="tot-active-text">D</span>
                 <span className="tot-inactive-text"> M </span>
                 <span className="tot-inactive-text">Y</span>
               </div>
+              {/* <Row>
+                <Col xxl={12} xl={12} lg={12} md={24} sm={24} xs={24}>
+                  <div className="dashboard-card-tabltitle">Total Calls</div>
+                </Col>
+                <Col xxl={12} xl={12} lg={12} md={24} sm={24} xs={24}>
+                  {" "}
+                  <div className="dashboard-card-tab-title">
+                    <span className="tot-text">Total Calls | 52</span>{" "}
+                    <span className="tot-active-text">D</span>
+                    <span className="tot-inactive-text"> M </span>
+                    <span className="tot-inactive-text">Y</span>
+                  </div>
+                </Col>
+              </Row> */}
             </div>
-
             <div>
               <Total />
             </div>

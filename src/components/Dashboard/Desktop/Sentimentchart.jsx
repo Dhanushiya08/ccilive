@@ -21,6 +21,9 @@ const Sentimentchart = () => {
           enabled: false,
         },
       },
+      dataLabels: {
+        enabled: false,
+      },
       labels: ["Negative", "Positive", "Neutral"],
       legend: {
         show: false, // Hide the legend
@@ -40,7 +43,7 @@ const Sentimentchart = () => {
   };
 
   return (
-    <div >
+    <div>
       <Chart
         options={chartOptions.options}
         series={chartOptions.series}
