@@ -5,10 +5,10 @@ function Dashboard() {
     <>
       {" "}
       <div>
-        <div className="body-desktop">
-          <DashboardDesktop />
-        </div>
-        <div className="body-mobile"></div>
+        {/* <div className="body-desktop"> */}
+        <DashboardDesktop />
+        {/* </div> */}
+        {/* <div className="body-mobile"></div> */}
       </div>
     </>
   );
