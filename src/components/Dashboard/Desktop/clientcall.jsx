@@ -1,6 +1,6 @@
 import { Row, Col, Card, Breadcrumb, Button, Table, Flex, Input } from "antd";
 import SidemenuDesktop from "../../Sidemenu/Desktop/SidemenuDesktop";
-import NavbarDesktop from "../../Navbar/Dashboard/NavbarDesktop";
+import NavbarDesktop from "../../Navbar/Desktop/NavbarDesktop";
 import logo from "../../../assets/dashboard/logo.svg";
 import { Icon } from "@iconify/react";
 
@@ -47,10 +47,9 @@ function Clientcall() {
   return (
     <>
       <Row>
-        <Col span={4}>
+      <Col xxl={4} xl={4} lg={6} md={0} sm={0} xs={0}>
           <SidemenuDesktop />
-        </Col>
-        <Col span={20}>
+        </Col> <Col xxl={20} xl={20} lg={18} md={24} sm={24} xs={24}>
           <Row>
             <Col span={24}>
               <NavbarDesktop />

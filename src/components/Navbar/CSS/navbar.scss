@@ -6,6 +6,15 @@
   border-bottom: 1px solid #e0e1e2;
   padding: 1rem;
 }
+.dashboard-header-mobile {
+  color: MainStyle.$theme-font-title;
+  font-weight: 700;
+}
+.menu-header-mobile {
+  font-size: 24px;
+  font-weight: 700;
+  color: MainStyle.$theme-font-title;
+}
 .ant-input-outlined.search-input {
   border: none !important;
   background-color: #f7f7f7;
@@ -32,4 +41,7 @@
   color: #242220;
   font-weight: 500;
   font-size: 11px;
+}
+.ant-drawer .ant-drawer-content {
+  margin-top: 4rem;
 }

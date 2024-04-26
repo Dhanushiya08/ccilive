@@ -1,6 +1,6 @@
 import { Row, Col } from "antd";
 import SidemenuDesktop from "../../Sidemenu/Desktop/SidemenuDesktop";
-import NavbarDesktop from "../../Navbar/Dashboard/NavbarDesktop";
+import NavbarDesktop from "../../Navbar/Desktop/NavbarDesktop";
 import Dashboardchartsmain from "./Dashboardchartsmain";
 import "../CSS/dashboard.scss";
 function DashboardDesktop() {

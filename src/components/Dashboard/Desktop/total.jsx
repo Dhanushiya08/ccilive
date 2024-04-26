@@ -3,7 +3,7 @@ import Chart from "react-apexcharts";
 
 const Total = () => {
   const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-  const data = [100, 200, 300, 400, 500];
+  const data = [100, 400, 300, 500, 200];
 
   const chartOptions = {
     chart: {
@@ -15,7 +15,10 @@ const Total = () => {
     stroke: {
       width: [2, 4],
     },
-
+    stroke: {
+      curve: "smooth",
+      width: 2,
+    },
     markers: {
       size: [4, 7],
     },

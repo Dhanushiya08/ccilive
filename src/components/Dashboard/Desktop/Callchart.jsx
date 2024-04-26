@@ -12,6 +12,9 @@ const Callchart = () => {
         type: "donut",
         height: 300,
       },
+      dataLabels: {
+        enabled: false,
+      },
       legend: {
         show: false, // Hide the legend
       },
@@ -26,7 +29,7 @@ const Callchart = () => {
         options={chartOptions.options}
         series={chartOptions.series}
         type="donut"
-        height={160}
+        height={220}
       />
     </div>
   );

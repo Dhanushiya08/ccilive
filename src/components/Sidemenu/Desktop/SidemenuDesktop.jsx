@@ -7,7 +7,7 @@ function SidemenuDesktop() {
     <>
       <div className="side-menu-body">
         <div className="d-flex justify-content-center px-2">
-          <div className="px-1 d-flex align-item-center pt-3">
+          <div className="px-1 d-flex align-items-center pt-3">
             <img src={logo} className="logo-image" />
           </div>
           <div className="dashboard-header py-2">Customer Call Insights</div>
